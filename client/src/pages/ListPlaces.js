@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { BASE_URL } from '../globals'
 import PlaceCard from '../components/PlaceCard'
+
 const ListPlaces = () => {
   const [places, setPlaces] = useState([])
 
@@ -14,12 +15,14 @@ const ListPlaces = () => {
     console.log(res)
     setPlaces(res.data.places)
   }
+
   return (
     <div>
       <h2>
         {places.map((place) => (
           <PlaceCard
-            key={place.id}
+            key={place._id}
+            id={place._id}
             title={place.title}
             location={place.location}
             image={place.url}
