@@ -11,7 +11,7 @@ const PlaceCard = (props) => {
   }
   console.log(props)
   return (
-    <div className="card">
+    <div className="place-card">
       <img src={props.image} alt="" />
       <h2>{props.title}</h2>
       <p>{props.location}</p>

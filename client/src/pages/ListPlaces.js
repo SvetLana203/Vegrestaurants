@@ -17,18 +17,16 @@ const ListPlaces = () => {
   }
 
   return (
-    <div>
-      <h2>
-        {places.map((place) => (
-          <PlaceCard
-            key={place._id}
-            id={place._id}
-            title={place.title}
-            location={place.location}
-            image={place.url}
-          />
-        ))}
-      </h2>
+    <div className="list-places">
+      {places.map((place) => (
+        <PlaceCard
+          key={place._id}
+          id={place._id}
+          title={place.title}
+          location={place.location}
+          image={place.url}
+        />
+      ))}
     </div>
   )
 }

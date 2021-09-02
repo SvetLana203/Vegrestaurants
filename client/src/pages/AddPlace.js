@@ -13,6 +13,7 @@ const AddPlace = (props) => {
   return (
     <form onSubmit={handleSubmit}>
       <input
+        className="input"
         type="text"
         name="title"
         value={props.form.title}
@@ -20,12 +21,14 @@ const AddPlace = (props) => {
         onChange={props.handleChange}
       ></input>
       <input
+        className="input"
         name="url"
         value={props.form.url}
         placeholder="image"
         onChange={props.handleChange}
       ></input>
       <input
+        className="input"
         name="location"
         value={props.form.location}
         placeholder="location"
