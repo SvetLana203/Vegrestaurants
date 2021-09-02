@@ -3,7 +3,10 @@ import React from 'react'
 function Home() {
   return (
     <div>
-      <h2>Important information</h2>
+      <p>
+        Vegrestaurants is where you can find vegetarian/vegan places, you can
+        also add your favorite restaurants!!!
+      </p>
     </div>
   )
 }
