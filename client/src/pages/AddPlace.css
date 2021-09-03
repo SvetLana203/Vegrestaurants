@@ -1,0 +1,30 @@
+.input {
+  background-color: #dce1de;
+  padding: 1em
+}
+
+button {
+  background-color:#509724 ;
+  padding: 1em;
+  border-radius: 1em
+}
+
+form {
+  background-color: #9d4edd;
+  padding: 10em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 40em;
+  min-height: 10em;
+  margin: 2em auto;
+  border-radius: 1em;
+}
+
+form input {
+  display: block;
+  border-radius: 1em;
+  width:15em;
+  height: 3em;
+}

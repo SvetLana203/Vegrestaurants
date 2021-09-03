@@ -2,10 +2,11 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { BASE_URL } from '../globals'
 import PlaceCard from '../components/PlaceCard'
+import './ListPlaces.css'
 
 const ListPlaces = () => {
   const [places, setPlaces] = useState([])
-
+  // const [searchResults, ]
   useEffect(() => {
     getPlaces()
   }, [])

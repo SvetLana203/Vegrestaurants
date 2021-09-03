@@ -10,8 +10,8 @@
 This app will help users to find  healthy and vegetarian/vegan restaraunt or restaurants with veg/vegan options nearby. And the users can add their favorite places.
 
 ***Technologies***
-* React
-* Node
+* React.js
+* Node.js
 * Express
 * MongoDB
 * Mongoose

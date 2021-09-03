@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import { BASE_URL } from '../globals'
+import './AddPlace.css'
 
 const AddPlace = (props) => {
   const handleSubmit = async (e) => {

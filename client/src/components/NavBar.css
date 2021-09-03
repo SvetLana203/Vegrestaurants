@@ -1,0 +1,17 @@
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5a189a;
+  padding: 1em;
+  min-height: 2em;
+  font-family: 'cookiss';
+  font-size: 35px;
+}
+
+.navbar a {
+  color: black;
+  font-weight: bold;
+  margin-left: 3em;
+  font-size: 35px;
+}
+  
