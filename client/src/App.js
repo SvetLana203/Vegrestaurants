@@ -5,6 +5,7 @@ import { Route, Switch } from 'react-router-dom'
 import Home from './pages/Home'
 import ListPlaces from './pages/ListPlaces'
 import AddPlace from './pages/AddPlace'
+import Search from './pages/Search'
 import NavBar from './components/NavBar'
 function App() {
   const [newPlace, setNewPlace] = useState({ title: '', url: '', location: '' })
@@ -36,6 +37,7 @@ function App() {
               />
             )}
           />
+          <Route path="/search" component={Search} />
         </Switch>
       </main>
     </div>
