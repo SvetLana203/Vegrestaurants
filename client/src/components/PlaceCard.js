@@ -10,6 +10,7 @@ const PlaceCard = (props) => {
     window.location.reload()
   }
   console.log(props)
+
   return (
     <div className="place-card">
       <img src={props.image} alt="" />
