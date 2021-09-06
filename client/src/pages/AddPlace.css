@@ -9,7 +9,7 @@ button {
   border-radius: 1em
 }
 
-form {
+.add {
   background-color: #9d4edd;
   padding: 10em;
   display: flex;

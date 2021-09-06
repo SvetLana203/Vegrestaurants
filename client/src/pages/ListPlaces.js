@@ -3,10 +3,11 @@ import axios from 'axios'
 import { BASE_URL } from '../globals'
 import PlaceCard from '../components/PlaceCard'
 import './ListPlaces.css'
+import SearchPlace from '../components/SearchPlace'
 
 const ListPlaces = () => {
   const [places, setPlaces] = useState([])
-  // const [searchResults, ]
+
   useEffect(() => {
     getPlaces()
   }, [])
@@ -18,16 +19,20 @@ const ListPlaces = () => {
   }
 
   return (
-    <div className="list-places">
-      {places.map((place) => (
-        <PlaceCard
-          key={place._id}
-          id={place._id}
-          title={place.title}
-          location={place.location}
-          image={place.url}
-        />
-      ))}
+    <div>
+      <SearchPlace />
+
+      <div className="list-places">
+        {places.map((place) => (
+          <PlaceCard
+            key={place._id}
+            id={place._id}
+            title={place.title}
+            location={place.location}
+            image={place.url}
+          />
+        ))}
+      </div>
     </div>
   )
 }

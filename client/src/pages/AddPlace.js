@@ -12,7 +12,7 @@ const AddPlace = (props) => {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="add" onSubmit={handleSubmit}>
       <input
         className="input"
         type="text"
